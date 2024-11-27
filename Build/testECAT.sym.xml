@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type ="text/xsl" href="file://C:/Users/GSAPOR~1.TEX/AppData/Local/Temp/LLSymTab.xsl" version="1.0"?>
+<LLSymbolTable Version="1.4" Name="testECAT" TargetID="PowerQ_1p95" CodeId="0xDB1A501A" DebugMemoId="0x201D97A9" MemoId="0x000057E0" DataRelocation="none" DbRelocation="none" FunctRelocation="none" dataAddrMode="byte" codeAddrMode="byte" NoIncrAlloc="false" is64bit="false" isBigEndian="false" dataSignature="0x5DB6F295">
+	<Resource Name="POWERQ" Proc="PowerPC_E200"/>
+	<CaseSensitive>false</CaseSensitive>
+	<CompilerOptions FBExtCheck="true"/>
+	<Tasks>
+		<Task Name="FAST" OrigName="Fast" Priority="0" Period="1000">
+			<Prog Name="MAIN" OrigName="main"/>
+		</Task>
+		<Task Name="INIT" OrigName="Init" Priority="3">
+			<Prog Name="INITPARDB" OrigName="InitParDB"/>
+		</Task>
+	</Tasks>
+	<GlobalVars>
+		<Var Name="$$STKLIMIT$$" OrigName="$$STKLIMIT$$" Type="DWORD" OrigType="DWORD" Addr="0x201F0000" Group="$$COMPILER_INTERNAL_VARS$$"/>
+		<Var Name="$$STKPOINTER$$" OrigName="$$STKPOINTER$$" Type="DWORD" OrigType="DWORD" Addr="0x201F0004" Group="$$COMPILER_INTERNAL_VARS$$"/>
+		<Var Name="$$DEBUGID$$" OrigName="$$DEBUGID$$" Type="DWORD" OrigType="DWORD" Addr="0x201F0008" Group="$$COMPILER_INTERNAL_VARS$$"/>
+		<Var Name="CNT" OrigName="cnt" Type="INT" OrigType="INT" Addr="0x201F0012" Group="Global_vars"/>
+		<Var Name="SYSTIMER" OrigName="sysTimer" Type="UDINT" OrigType="UDINT" Addr="0x20026298" Descr="System timer [ms]" Group="System_Timers" OnDataBlock="true" DataBlockType="M" DBDataType="D" DataBlockNumber="60000" DataBlockIndex="0" Access="1"/>
+		<Var Name="SYSDIGITALINPUTS" OrigName="sysDigitalInputs" Type="BOOL" OrigType="BOOL" Addr="0x2007FD56" Descr="System digital inputs" Group="Input_and_outputs" OnDataBlock="true" DataBlockType="I" DBDataType="X" DataBlockNumber="0" DataBlockIndex="0" Access="1" Dims="10"/>
+		<Var Name="SYSDIGITALOUTPUTS" OrigName="sysDigitalOutputs" Type="BOOL" OrigType="BOOL" Addr="0x20080456" Descr="System digital outputs" Group="Input_and_outputs" OnDataBlock="true" DataBlockType="Q" DBDataType="X" DataBlockNumber="0" DataBlockIndex="0" Access="3" Dims="10"/>
+		<Var Name="SYSANALOGINPUTS" OrigName="sysAnalogInputs" Type="UINT" OrigType="UINT" Addr="0x200262B4" Descr="System analog inputs" Group="Input_and_outputs" OnDataBlock="true" DataBlockType="I" DBDataType="W" DataBlockNumber="1" DataBlockIndex="0" Access="1" Dims="3"/>
+		<Var Name="SYSUSERDATABLOCK" OrigName="sysUserDataBlock" Type="USINT" OrigType="USINT" Addr="0x2007F956" Descr="Data block available for user data mapping" Group="User_mappings" OnDataBlock="true" DataBlockType="M" DBDataType="B" DataBlockNumber="0" DataBlockIndex="0" Access="3" Dims="1024"/>
+		<Var Name="SYSPARAMETERS" OrigName="sysParameters" Type="WORD" OrigType="WORD" Addr="0x20080B56" Group="System" OnDataBlock="true" DataBlockType="M" DBDataType="W" DataBlockNumber="200" DataBlockIndex="0" Access="3" Dims="400" hidden="true"/>
+		<Var Name="SYSSTATUSVARS" OrigName="sysStatusVars" Type="WORD" OrigType="WORD" Addr="0x20080F56" Group="System" OnDataBlock="true" DataBlockType="M" DBDataType="W" DataBlockNumber="201" DataBlockIndex="0" Access="3" Dims="512" hidden="true"/>
+		<Var Name="$$CODEBASE$$" OrigName="$$CODEBASE$$" Type="UDINT" OrigType="UDINT" Addr="0x201DC000"/>
+		<Var Name="$$CODESTART$$" OrigName="$$CODESTART$$" Type="UDINT" OrigType="UDINT" Addr="0x201DC0A0"/>
+		<Var Name="$$CODESIZE$$" OrigName="$$CODESIZE$$" Type="UDINT" OrigType="UDINT" Addr="0x201DC690"/>
+		<Var Name="$$CODEEND$$" OrigName="$$CODEEND$$" Type="UDINT" OrigType="UDINT" Addr="0x201F0000"/>
+		<Var Name="$$DATASIZE$$" OrigName="$$DATASIZE$$" Type="UDINT" OrigType="UDINT" Addr="0x201F0014"/>
+		<Var Name="$$AUXDATASIZE$$" OrigName="$$AUXDATASIZE$$" Type="UDINT" OrigType="UDINT" Addr="0x0"/>
+		<Var Name="$$BITDATASIZE$$" OrigName="$$BITDATASIZE$$" Type="UDINT" OrigType="UDINT" Addr="0x0"/>
+		<Var Name="$$RITDATASIZE$$" OrigName="$$RITDATASIZE$$" Type="UDINT" OrigType="UDINT" Addr="0x20022C86"/>
+	</GlobalVars>
+	<Programs>
+		<Prog Name="INITPARDB" OrigName="InitParDB" SrcType="3" CodeAddr="0x201DC240" HashCode="E7751545">
+			<Var Name="WARNINGSKILLER" OrigName="warningsKiller" Type="USINT" OrigType="USINT" Addr="0x201F0010"/>
+			<Var Name="DUMMYCRC32" OrigName="dummyCrc32" Type="UDINT" OrigType="UDINT" Addr="0x201F000C"/>
+		</Prog>
+		<Prog Name="MAIN" OrigName="main" SrcType="3" CodeAddr="0x201DC0B0" HashCode="1FDBE00B"/>
+	</Programs>
+	<FunctionBlocks/>
+	<Functions>
+		<Fun Name="SYSLOGWRITEMSG" OrigName="sysLogWriteMsg" SrcType="6" CodeAddr="0xC33AF4" HashCode="00001505">
+			<Res Name="SYSLOGWRITEMSG" OrigName="sysLogWriteMsg" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="LEVEL" OrigName="level" Type="UINT" OrigType="UINT" Addr="0x3" Attribs="register"/>
+			<VarI Name="MSG" OrigName="msg" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" length="32"/>
+			<VarI Name="INFO1" OrigName="info1" Type="DINT" OrigType="DINT" Addr="0x5" Attribs="register"/>
+			<VarI Name="INFO2" OrigName="info2" Type="DINT" OrigType="DINT" Addr="0x6" Attribs="register"/>
+			<VarI Name="INFO3" OrigName="info3" Type="DINT" OrigType="DINT" Addr="0x7" Attribs="register"/>
+			<VarI Name="INFO4" OrigName="info4" Type="DINT" OrigType="DINT" Addr="0x8" Attribs="register"/>
+		</Fun>
+		<Fun Name="SAMPLEEMBEDDEDFUNC" OrigName="sampleEmbeddedFunc" SrcType="6" CodeAddr="0xFFFFFFFFFFFFFFFF" HashCode="00001505">
+			<Res Name="SAMPLEEMBEDDEDFUNC" OrigName="sampleEmbeddedFunc" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="PAR1" OrigName="par1" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="PAR2" OrigName="par2" Type="REAL" OrigType="REAL" Addr="0x4" Attribs="register"/>
+		</Fun>
+		<Fun Name="SYSDBASE_SAVEALL" OrigName="sysDBase_SaveAll" SrcType="6" CodeAddr="0xFFFFFFFFFFFFFFFF" HashCode="00001505">
+			<Res Name="SYSDBASE_SAVEALL" OrigName="sysDBase_SaveAll" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="DUMMY" OrigName="dummy" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register" Descr="Dummy"/>
+		</Fun>
+		<Fun Name="SYSDBASE_SETEXTTABLE" OrigName="sysDBase_SetExtTable" SrcType="6" CodeAddr="0xC39ED0" HashCode="00001505">
+			<Res Name="SYSDBASE_SETEXTTABLE" OrigName="sysDBase_SetExtTable" Type="USINT" OrigType="USINT" Addr="0x3" Attribs="register"/>
+			<VarI Name="PTRDB" OrigName="ptrDB" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Database Physical address"/>
+			<VarI Name="NUMPARS" OrigName="numPars" Type="UDINT" OrigType="UDINT" Addr="0x4" Attribs="register" Descr="Number of parameters"/>
+			<VarI Name="IDXDATABLOCKE2" OrigName="idxDatablockE2" Type="UINT" OrigType="UINT" Addr="0x5" Attribs="register" Descr="Index of datablock for E2 parameters"/>
+			<VarI Name="PTRDATABLOCKE2" OrigName="ptrDatablockE2" Type="DWORD" OrigType="DWORD" Addr="0x6" Attribs="register" Descr="Address of datablock for E2 parameters"/>
+			<VarI Name="NUMELEMSDATABLOCKE2" OrigName="numelemsDatablockE2" Type="UDINT" OrigType="UDINT" Addr="0x7" Attribs="register" Descr="Number of elements of datablock for E2 parameters"/>
+			<VarI Name="DATASIZEDATABLOCKE2" OrigName="datasizeDatablockE2" Type="USINT" OrigType="USINT" Addr="0x8" Attribs="register" Descr="Size of an element of datablock for E2 parameters"/>
+			<VarI Name="IDXDATABLOCKRAM" OrigName="idxDatablockRAM" Type="UINT" OrigType="UINT" Addr="0x9" Attribs="register" Descr="Index of datablock for RAM parameters"/>
+			<VarI Name="PTRDATABLOCKRAM" OrigName="ptrDatablockRAM" Type="DWORD" OrigType="DWORD" Addr="0xA" Attribs="register" Descr="Address of datablock for RAM parameters"/>
+			<VarI Name="NUMELEMSDATABLOCKRAM" OrigName="numelemsDatablockRAM" Type="UDINT" OrigType="UDINT" Addr="0x1B[8]" Attribs="relative,stack" Descr="Number of elements of datablock for RAM parameters"/>
+			<VarI Name="DATASIZEDATABLOCKRAM" OrigName="datasizeDatablockRAM" Type="USINT" OrigType="USINT" Addr="0x1B[15]" Attribs="relative,stack" Descr="Size of an element of datablock for RAM parameters"/>
+			<VarI Name="EXTTABLESIGNATURE" OrigName="extTableSignature" Type="DWORD" OrigType="DWORD" Addr="0x1B[16]" Attribs="relative,stack" Descr="Signature to reset default value if something changed"/>
+		</Fun>
+		<Fun Name="SYSDBASE_SETEXTMENUS" OrigName="sysDBase_SetExtMenus" SrcType="6" CodeAddr="0xFFFFFFFFFFFFFFFF" HashCode="00001505">
+			<Res Name="SYSDBASE_SETEXTMENUS" OrigName="sysDBase_SetExtMenus" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="PTRMENUINDEX" OrigName="ptrMenuIndex" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Menus index physical address"/>
+			<VarI Name="NUMMENUS" OrigName="numMenus" Type="UDINT" OrigType="UDINT" Addr="0x4" Attribs="register" Descr="Number of parameters"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARBOOL" OrigName="sysWriteParBOOL" SrcType="6" CodeAddr="0xC3A244" HashCode="00001505">
+			<Res Name="SYSWRITEPARBOOL" OrigName="sysWriteParBOOL" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="BOOL" OrigType="BOOL" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARUSINT" OrigName="sysWriteParUSINT" SrcType="6" CodeAddr="0xC38ED8" HashCode="00001505">
+			<Res Name="SYSWRITEPARUSINT" OrigName="sysWriteParUSINT" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="USINT" OrigType="USINT" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARSINT" OrigName="sysWriteParSINT" SrcType="6" CodeAddr="0xC38F80" HashCode="00001505">
+			<Res Name="SYSWRITEPARSINT" OrigName="sysWriteParSINT" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="SINT" OrigType="SINT" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARBYTE" OrigName="sysWriteParBYTE" SrcType="6" CodeAddr="0xC3A19C" HashCode="00001505">
+			<Res Name="SYSWRITEPARBYTE" OrigName="sysWriteParBYTE" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="BYTE" OrigType="BYTE" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARINT" OrigName="sysWriteParINT" SrcType="6" CodeAddr="0xC38E30" HashCode="00001505">
+			<Res Name="SYSWRITEPARINT" OrigName="sysWriteParINT" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="INT" OrigType="INT" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARUINT" OrigName="sysWriteParUINT" SrcType="6" CodeAddr="0xC38D88" HashCode="00001505">
+			<Res Name="SYSWRITEPARUINT" OrigName="sysWriteParUINT" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="UINT" OrigType="UINT" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARWORD" OrigName="sysWriteParWORD" SrcType="6" CodeAddr="0xC3A0F4" HashCode="00001505">
+			<Res Name="SYSWRITEPARWORD" OrigName="sysWriteParWORD" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARDINT" OrigName="sysWriteParDINT" SrcType="6" CodeAddr="0xC38CE0" HashCode="00001505">
+			<Res Name="SYSWRITEPARDINT" OrigName="sysWriteParDINT" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="DINT" OrigType="DINT" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARUDINT" OrigName="sysWriteParUDINT" SrcType="6" CodeAddr="0xC3A04C" HashCode="00001505">
+			<Res Name="SYSWRITEPARUDINT" OrigName="sysWriteParUDINT" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="UDINT" OrigType="UDINT" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARDWORD" OrigName="sysWriteParDWORD" SrcType="6" CodeAddr="0xC39FA4" HashCode="00001505">
+			<Res Name="SYSWRITEPARDWORD" OrigName="sysWriteParDWORD" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="DWORD" OrigType="DWORD" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARREAL" OrigName="sysWriteParREAL" SrcType="6" CodeAddr="0xC39038" HashCode="00001505">
+			<Res Name="SYSWRITEPARREAL" OrigName="sysWriteParREAL" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ADDRESS" OrigName="address" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="VALUE" OrigName="Value" Type="REAL" OrigType="REAL" Addr="0x4" Attribs="register" Descr="Value"/>
+		</Fun>
+		<Fun Name="SYSWRITEPARSTRING" OrigName="sysWriteParSTRING" SrcType="6" CodeAddr="0xC39114" HashCode="00001505">
+			<Res Name="SYSWRITEPARSTRING" OrigName="sysWriteParSTRING" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ID" OrigName="id" Type="UDINT" OrigType="UDINT" Addr="0x3" Attribs="register" Descr="Address"/>
+			<VarI Name="MSG" OrigName="msg" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="String" length="32"/>
+			<VarI Name="LEN" OrigName="len" Type="USINT" OrigType="USINT" Addr="0x5" Attribs="register" Descr="SIZEOF(String to write)"/>
+		</Fun>
+		<Fun Name="SYSPARRESTOREDEFAULT" OrigName="sysParRestoreDefault" SrcType="6" CodeAddr="0xFFFFFFFFFFFFFFFF" HashCode="00001505">
+			<Res Name="SYSPARRESTOREDEFAULT" OrigName="sysParRestoreDefault" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ID" OrigName="id" Type="UDINT" OrigType="UDINT" Addr="0x3" Attribs="register" Descr="Address"/>
+		</Fun>
+		<Fun Name="SYSDBASE_SETPAR" OrigName="sysDBase_SetPar" SrcType="6" CodeAddr="0xFFFFFFFFFFFFFFFF" HashCode="00001505">
+			<Res Name="SYSDBASE_SETPAR" OrigName="sysDBase_SetPar" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="UINT" OrigType="UINT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SUBINDEX" OrigName="subindex" Type="USINT" OrigType="USINT" Addr="0x4" Attribs="register"/>
+			<VarI Name="PARTYPE" OrigName="parType" Type="USINT" OrigType="USINT" Addr="0x5" Attribs="register"/>
+			<VarI Name="BUFF" OrigName="buff" Type="DWORD" OrigType="DWORD" Addr="0x6" Attribs="register"/>
+			<VarI Name="DIM" OrigName="dim" Type="UDINT" OrigType="UDINT" Addr="0x7" Attribs="register"/>
+		</Fun>
+		<Fun Name="SYSDBASE_GETPAR" OrigName="sysDBase_GetPar" SrcType="6" CodeAddr="0xFFFFFFFFFFFFFFFF" HashCode="00001505">
+			<Res Name="SYSDBASE_GETPAR" OrigName="sysDBase_GetPar" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="UINT" OrigType="UINT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SUBINDEX" OrigName="subindex" Type="USINT" OrigType="USINT" Addr="0x4" Attribs="register"/>
+			<VarI Name="PARTYPE" OrigName="parType" Type="@USINT" OrigType="@USINT" Addr="0x5" Attribs="register"/>
+			<VarI Name="BUFF" OrigName="buff" Type="DWORD" OrigType="DWORD" Addr="0x6" Attribs="register"/>
+			<VarI Name="DIM" OrigName="dim" Type="@UDINT" OrigType="@UDINT" Addr="0x7" Attribs="register"/>
+		</Fun>
+		<Fun Name="SYSDBASE_SETDBMODBUSCOMPLIANT" OrigName="sysDBase_SetDBModbusCompliant" SrcType="6" CodeAddr="0xFFFFFFFFFFFFFFFF" HashCode="00001505">
+			<Res Name="SYSDBASE_SETDBMODBUSCOMPLIANT" OrigName="sysDBase_SetDBModbusCompliant" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="SET_DBMODBUSCOMPLIANT" OrigName="set_DBModbusCompliant" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register" Descr="TRUE for database modbus compliant, FALSE if free indexing database"/>
+		</Fun>
+		<Fun Name="TEXALARM_FAL" OrigName="TexAlarm_FAL" SrcType="6" CodeAddr="0xE2D82C" HashCode="00001505">
+			<Res Name="TEXALARM_FAL" OrigName="TexAlarm_FAL" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="MESSAGENUMBER" OrigName="messageNumber" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXALARM_CLEARFAL" OrigName="TexAlarm_clearFAL" SrcType="6" CodeAddr="0xE2D7F8" HashCode="00001505">
+			<Res Name="TEXALARM_CLEARFAL" OrigName="TexAlarm_clearFAL" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="DUMMY" OrigName="dummy" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXALARM_CURRENTALARM" OrigName="TexAlarm_currentAlarm" SrcType="6" CodeAddr="0xE2D7C0" HashCode="00001505">
+			<Res Name="TEXALARM_CURRENTALARM" OrigName="TexAlarm_currentAlarm" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="TIMEALARM" OrigName="timeAlarm" Type="@UDINT" OrigType="@UDINT" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXALARM_EMERGENCY" OrigName="TexAlarm_emergency" SrcType="6" CodeAddr="0xE2D85C" HashCode="00001505">
+			<Res Name="TEXALARM_EMERGENCY" OrigName="TexAlarm_emergency" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="ACTIVATE" OrigName="activate" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILERENAME" OrigName="TexFS_sysFileRename" SrcType="6" CodeAddr="0xE31F3C" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILERENAME" OrigName="TexFS_sysFileRename" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZOLDFILENAME" OrigName="szOldFileName" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="Old file name. File name can contain an absolute path to the file." length="32"/>
+			<VarI Name="SZNEWFILENAME" OrigName="szNewFileName" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="New file name. File name can contain an absolute path to the file." length="32"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETSIZE" OrigName="TexFS_sysFileGetSize" SrcType="6" CodeAddr="0xE31A90" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETSIZE" OrigName="TexFS_sysFileGetSize" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZFILENAME" OrigName="szFileName" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="File name. File name can contain an absolute path to the file." length="32"/>
+			<VarI Name="PRESULT" OrigName="pResult" Type="@INT" OrigType="@INT" Addr="0x4" Attribs="register" Descr="pointer to system error code"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILECLOSE" OrigName="TexFS_sysFileClose" SrcType="6" CodeAddr="0xE31460" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILECLOSE" OrigName="TexFS_sysFileClose" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEEOF" OrigName="TexFS_sysFileEOF" SrcType="6" CodeAddr="0xE31834" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEEOF" OrigName="TexFS_sysFileEOF" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEFLUSH" OrigName="TexFS_sysFileFlush" SrcType="6" CodeAddr="0xE318AC" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEFLUSH" OrigName="TexFS_sysFileFlush" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEWRITE" OrigName="TexFS_sysFileWrite" SrcType="6" CodeAddr="0xE32120" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEWRITE" OrigName="TexFS_sysFileWrite" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle to the file"/>
+			<VarI Name="PBYBUFFER" OrigName="pbyBuffer" Type="@BYTE" OrigType="@BYTE" Addr="0x4" Attribs="register" Descr="pointer to buffer with data to write to file"/>
+			<VarI Name="ULSIZE" OrigName="ulSize" Type="INT" OrigType="INT" Addr="0x5" Attribs="register" Descr="number of bytes to write in the file, must be less or equal the buffer size"/>
+			<VarI Name="PRESULT" OrigName="pResult" Type="@INT" OrigType="@INT" Addr="0x6" Attribs="register" Descr="pointer to system error code"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEREAD" OrigName="TexFS_sysFileRead" SrcType="6" CodeAddr="0xE31E1C" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEREAD" OrigName="TexFS_sysFileRead" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+			<VarI Name="PBYBUFFER" OrigName="pbyBuffer" Type="@BYTE" OrigType="@BYTE" Addr="0x4" Attribs="register" Descr="pointer to buffer for read data"/>
+			<VarI Name="ULSIZE" OrigName="ulSize" Type="INT" OrigType="INT" Addr="0x5" Attribs="register" Descr="number of bytes to read from file, must be less or equal to the buffer size!"/>
+			<VarI Name="PRESULT" OrigName="pResult" Type="@INT" OrigType="@INT" Addr="0x6" Attribs="register" Descr="pointer to system error code"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILECOPY" OrigName="TexFS_sysFileCopy" SrcType="6" CodeAddr="0xE3149C" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILECOPY" OrigName="TexFS_sysFileCopy" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZDESTFILENAME" OrigName="szDestFileName" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="destination file name, file name can contain an absolute path to the file." length="32"/>
+			<VarI Name="SZSOURCEFILENAME" OrigName="szSourceFileName" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="source file name, file name can contain an absolute path to the file." length="32"/>
+			<VarI Name="PULCOPIED" OrigName="pulCopied" Type="@INT" OrigType="@INT" Addr="0x5" Attribs="register" Descr="number of bytes copied"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEDELETE" OrigName="TexFS_sysFileDelete" SrcType="6" CodeAddr="0xE3173C" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEDELETE" OrigName="TexFS_sysFileDelete" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZFILENAME" OrigName="szFileName" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="File name. File name can contain an absolute path to the file." length="32"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEOPEN" OrigName="TexFS_sysFileOpen" SrcType="6" CodeAddr="0xE31CC8" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEOPEN" OrigName="TexFS_sysFileOpen" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZFILENAME" OrigName="szFileName" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="File name. File name can contain an absolute path to the file." length="32"/>
+			<VarI Name="AM" OrigName="am" Type="DINT" OrigType="DINT" Addr="0x4" Attribs="register" Descr="Requested access mode to the file" Range="TEXFS_ACCESS_MODE"/>
+			<VarI Name="PRESULT" OrigName="pResult" Type="@INT" OrigType="@INT" Addr="0x5" Attribs="register" Descr="pointer to system error code"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILESETPOS" OrigName="TexFS_sysFileSetPos" SrcType="6" CodeAddr="0xE320C0" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILESETPOS" OrigName="TexFS_sysFileSetPos" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+			<VarI Name="ULOFFSET" OrigName="ulOffset" Type="INT" OrigType="INT" Addr="0x4" Attribs="register" Descr="offset to set from the beginning of the file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETSTATUS" OrigName="TexFS_sysFileGetStatus" SrcType="6" CodeAddr="0xE31B64" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETSTATUS" OrigName="TexFS_sysFileGetStatus" Type="DINT" OrigType="DINT" Addr="0x3" Attribs="register" Range="TEXFS_SYS_FILE_STATUS"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETTIME" OrigName="TexFS_sysFileGetTime" SrcType="6" CodeAddr="0xE31C40" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETTIME" OrigName="TexFS_sysFileGetTime" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZFILENAME" OrigName="szFileName" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="file name, file name can contain an absolute path to the file." length="32"/>
+			<VarI Name="PTFILETIME" OrigName="ptFileTime" Type="@TEXFS_SYS_FILETIME" OrigType="@TEXFS_SYS_FILETIME" Addr="0x4" Attribs="register" Descr="pointer to get the file time results"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETNAME" OrigName="TexFS_sysFileGetName" SrcType="6" CodeAddr="0xE31948" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETNAME" OrigName="TexFS_sysFileGetName" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+			<VarI Name="PTFILENAME" OrigName="ptFileName" Type="@STRING" OrigType="@STRING" Addr="0x4" Attribs="register" Descr="pointer to File name of the specified file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETPOS" OrigName="TexFS_sysFileGetPos" SrcType="6" CodeAddr="0xE319C4" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETPOS" OrigName="TexFS_sysFileGetPos" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle of the file"/>
+			<VarI Name="PULPOS" OrigName="pulPos" Type="@INT" OrigType="@INT" Addr="0x4" Attribs="register" Descr="pointer to get actual position of the file pointer from the beginning of the file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETSIZEBYHANDLE" OrigName="TexFS_sysFileGetSizeByHandle" SrcType="6" CodeAddr="0xE31A30" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETSIZEBYHANDLE" OrigName="TexFS_sysFileGetSizeByHandle" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="Handle of the file"/>
+			<VarI Name="PRESULT" OrigName="pResult" Type="@INT" OrigType="@INT" Addr="0x4" Attribs="register" Descr="pointer to system error code"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETTIMEBYHANDLE" OrigName="TexFS_sysFileGetTimeByHandle" SrcType="6" CodeAddr="0xE31B9C" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETTIMEBYHANDLE" OrigName="TexFS_sysFileGetTimeByHandle" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="Handle of the file"/>
+			<VarI Name="PTFILETIME" OrigName="ptFileTime" Type="@TEXFS_SYS_FILETIME" OrigType="@TEXFS_SYS_FILETIME" Addr="0x4" Attribs="register" Descr="pointer to get the file time results"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEGETPATH" OrigName="TexFS_sysFileGetPath" SrcType="6" CodeAddr="0xE321A0" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEGETPATH" OrigName="TexFS_sysFileGetPath" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZFILENAME" OrigName="szFileName" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="File name. Can contain an absolute path to the file and the maximum size in bytes of file name length is 48" length="32"/>
+			<VarI Name="SZPATH" OrigName="szPath" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="Path for this file" length="32"/>
+			<VarI Name="DIMAXLEN" OrigName="diMaxLen" Type="DINT" OrigType="DINT" Addr="0x5" Attribs="register" Descr="Maximum size in bytes of path length"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEDELETEBYHANDLE" OrigName="TexFS_sysFileDeleteByHandle" SrcType="6" CodeAddr="0xE31638" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEDELETEBYHANDLE" OrigName="TexFS_sysFileDeleteByHandle" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="Handle of the file"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILESETPATH" OrigName="TexFS_sysFileSetPath" SrcType="6" CodeAddr="0xE3229C" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILESETPATH" OrigName="TexFS_sysFileSetPath" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZPATH" OrigName="szPath" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="Path of the file. The maximum size in bytes of file name, with path, length is 48" length="32"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILETRUNCATE" OrigName="TexFS_sysFileTruncate" SrcType="6" CodeAddr="0xE322F8" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILETRUNCATE" OrigName="TexFS_sysFileTruncate" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="Handle of the file"/>
+			<VarI Name="ULSIZENEW" OrigName="ulSizeNew" Type="INT" OrigType="INT" Addr="0x4" Attribs="register" Descr="Size to set"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSFILEREADLINE" OrigName="TexFS_sysFileReadLine" SrcType="6" CodeAddr="0xE31E9C" HashCode="00001505">
+			<Res Name="TEXFS_SYSFILEREADLINE" OrigName="TexFS_sysFileReadLine" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HFILE" OrigName="hFile" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="Handle of the file"/>
+			<VarI Name="PBYBUFFER" OrigName="pbyBuffer" Type="@BYTE" OrigType="@BYTE" Addr="0x4" Attribs="register" Descr="Pointer to buffer for read data"/>
+			<VarI Name="ULSIZE" OrigName="ulSize" Type="INT" OrigType="INT" Addr="0x5" Attribs="register" Descr="Size of buffer"/>
+			<VarI Name="PRESULT" OrigName="pResult" Type="@INT" OrigType="@INT" Addr="0x6" Attribs="register" Descr="pointer to system error code"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRCLOSE" OrigName="TexFS_sysDirClose" SrcType="6" CodeAddr="0xE32310" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRCLOSE" OrigName="TexFS_sysDirClose" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HDIR" OrigName="hDir" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle to directory opened with TexFS_sysDirOpen"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRCOPY" OrigName="TexFS_sysDirCopy" SrcType="6" CodeAddr="0xE32324" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRCOPY" OrigName="TexFS_sysDirCopy" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZDESTDIR" OrigName="szDestDir" Type="@STRING" OrigType="@STRING" Addr="0x3" Attribs="register" Descr="Name of destination directory"/>
+			<VarI Name="SZSOURCEDIR" OrigName="szSourceDir" Type="@STRING" OrigType="@STRING" Addr="0x4" Attribs="register" Descr="Name of source directory"/>
+			<VarI Name="XOVERWRITE" OrigName="xOverwrite" Type="BOOL" OrigType="BOOL" Addr="0x5" Attribs="register" Descr="TRUE: existing files are overwritten, FALSE: existing files are left untouched"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRCREATE" OrigName="TexFS_sysDirCreate" SrcType="6" CodeAddr="0xE324A8" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRCREATE" OrigName="TexFS_sysDirCreate" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZDIR" OrigName="szDir" Type="@STRING" OrigType="@STRING" Addr="0x3" Attribs="register" Descr="Name of directory"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRDELETE" OrigName="TexFS_sysDirDelete" SrcType="6" CodeAddr="0xE32588" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRDELETE" OrigName="TexFS_sysDirDelete" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZDIR" OrigName="szDir" Type="@STRING" OrigType="@STRING" Addr="0x3" Attribs="register" Descr="Name of directory"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRGETCURRENT" OrigName="TexFS_sysDirGetCurrent" SrcType="6" CodeAddr="0xE32684" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRGETCURRENT" OrigName="TexFS_sysDirGetCurrent" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZDIR" OrigName="szDir" Type="STRING" OrigType="STRING" Addr="0x3" Attribs="register" Descr="Name of current directory" length="32"/>
+			<VarI Name="DIMAXDIRLEN" OrigName="diMaxDirLen" Type="DINT" OrigType="DINT" Addr="0x4" Attribs="register" Descr="Max lenght of directory buffer"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIROPEN" OrigName="TexFS_sysDirOpen" SrcType="6" CodeAddr="0xE32698" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIROPEN" OrigName="TexFS_sysDirOpen" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZDIR" OrigName="szDir" Type="@STRING" OrigType="@STRING" Addr="0x3" Attribs="register" Descr="Name of directory"/>
+			<VarI Name="SZDIRENTRY" OrigName="szDirEntry" Type="@STRING" OrigType="@STRING" Addr="0x4" Attribs="register" Descr="Directory entry as string, may be 0"/>
+			<VarI Name="DIMAXDIRENTRY" OrigName="diMaxDirEntry" Type="DINT" OrigType="DINT" Addr="0x5" Attribs="register" Descr="Max number of bytes to write in pszDirEntry"/>
+			<VarI Name="PDIRINFO" OrigName="pDirInfo" Type="@TEXFS_DIR_INFO" OrigType="@TEXFS_DIR_INFO" Addr="0x6" Attribs="register" Descr="Directory information, may be 0"/>
+			<VarI Name="PRESULT" OrigName="pResult" Type="@INT" OrigType="@INT" Addr="0x7" Attribs="register" Descr="Pointer to system error code"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRREAD" OrigName="TexFS_sysDirRead" SrcType="6" CodeAddr="0xE326F8" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRREAD" OrigName="TexFS_sysDirRead" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="HDIR" OrigName="hDir" Type="INT" OrigType="INT" Addr="0x3" Attribs="register" Descr="handle to directory opened with TexFS_sysDirOpen"/>
+			<VarI Name="SZDIRENTRY" OrigName="szDirEntry" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="Directory entry as string" length="32"/>
+			<VarI Name="DIMAXDIRENTRY" OrigName="diMaxDirEntry" Type="DINT" OrigType="DINT" Addr="0x5" Attribs="register" Descr="Max number of bytes to write in pszDirEntry"/>
+			<VarI Name="PDIRINFO" OrigName="pDirInfo" Type="@TEXFS_DIR_INFO" OrigType="@TEXFS_DIR_INFO" Addr="0x6" Attribs="register" Descr="Directory information NOTE: Can be 0 (so only directory name is provided in pszDirEntry)"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRRENAME" OrigName="TexFS_sysDirRename" SrcType="6" CodeAddr="0xE3270C" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRRENAME" OrigName="TexFS_sysDirRename" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZOLDDIRNAME" OrigName="szOldDirName" Type="@STRING" OrigType="@STRING" Addr="0x3" Attribs="register" Descr="Name of existing directory"/>
+			<VarI Name="SZNEWDIRNAME" OrigName="szNewDirName" Type="@STRING" OrigType="@STRING" Addr="0x4" Attribs="register" Descr="Name of new directory"/>
+		</Fun>
+		<Fun Name="TEXFS_SYSDIRSETCURRENT" OrigName="TexFS_sysDirSetCurrent" SrcType="6" CodeAddr="0xE32720" HashCode="00001505">
+			<Res Name="TEXFS_SYSDIRSETCURRENT" OrigName="TexFS_sysDirSetCurrent" Type="INT" OrigType="INT" Addr="0x3" Attribs="register"/>
+			<VarI Name="SZDIR" OrigName="szDir" Type="@STRING" OrigType="@STRING" Addr="0x3" Attribs="register" Descr="Name of current directory"/>
+		</Fun>
+		<Fun Name="TEXHMI_CLOSEPMT" OrigName="TexHMI_closePMT" SrcType="6" CodeAddr="0xE32780" HashCode="00001505">
+			<Res Name="TEXHMI_CLOSEPMT" OrigName="TexHMI_closePMT" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="PAGENUMBER" OrigName="pageNumber" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="PMT page number"/>
+		</Fun>
+		<Fun Name="TEXHMI_OPENPMT" OrigName="TexHMI_openPMT" SrcType="6" CodeAddr="0xE32734" HashCode="00001505">
+			<Res Name="TEXHMI_OPENPMT" OrigName="TexHMI_openPMT" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="PAGENUMBER" OrigName="pageNumber" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="PMT page number"/>
+			<VarI Name="SUSPEND" OrigName="suspend" Type="BOOL" OrigType="BOOL" Addr="0x4" Attribs="register" Descr="open PMT as suspended"/>
+		</Fun>
+		<Fun Name="TEXHMI_INFOPMT" OrigName="TexHMI_infoPMT" SrcType="6" CodeAddr="0xE327F4" HashCode="00001505">
+			<Res Name="TEXHMI_INFOPMT" OrigName="TexHMI_infoPMT" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="PAGEOPENASACTIVE" OrigName="pageOpenAsActive" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="s224 (word) - page actually open"/>
+			<VarI Name="PAGEOPENNOTACTIVE" OrigName="pageOpenNotActive" Type="DWORD" OrigType="DWORD" Addr="0x4" Attribs="register" Descr="info 0088 - number of pages actually open and not active"/>
+			<VarI Name="PAGEMOSTRECENTLYNONACTIVE" OrigName="pageMostRecentlyNonActive" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="info 0089 - parametric page most recently made not active"/>
+		</Fun>
+		<Fun Name="TEXHMI_SETPIXEL" OrigName="TexHMI_setPixel" SrcType="6" CodeAddr="0xE32A64" HashCode="00001505">
+			<Res Name="TEXHMI_SETPIXEL" OrigName="TexHMI_setPixel" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="X" OrigName="X" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="Y" OrigName="Y" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_RECTANGLE" OrigName="TexHMI_rectangle" SrcType="6" CodeAddr="0xE32AE8" HashCode="00001505">
+			<Res Name="TEXHMI_RECTANGLE" OrigName="TexHMI_rectangle" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="X1" OrigName="X1" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="Y1" OrigName="Y1" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register"/>
+			<VarI Name="X2" OrigName="X2" Type="WORD" OrigType="WORD" Addr="0x5" Attribs="register"/>
+			<VarI Name="Y2" OrigName="Y2" Type="WORD" OrigType="WORD" Addr="0x6" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_SCREEN" OrigName="TexHMI_screen" SrcType="6" CodeAddr="0xE32B98" HashCode="00001505">
+			<Res Name="TEXHMI_SCREEN" OrigName="TexHMI_screen" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="SCREEN" OrigName="screen" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="FLAGS" OrigName="flags" Type="DWORD" OrigType="DWORD" Addr="0x4" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_LINE" OrigName="TexHMI_line" SrcType="6" CodeAddr="0xE32A98" HashCode="00001505">
+			<Res Name="TEXHMI_LINE" OrigName="TexHMI_line" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="X1" OrigName="X1" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="Y1" OrigName="Y1" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register"/>
+			<VarI Name="X2" OrigName="X2" Type="WORD" OrigType="WORD" Addr="0x5" Attribs="register"/>
+			<VarI Name="Y2" OrigName="Y2" Type="WORD" OrigType="WORD" Addr="0x6" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_PRINTSTRING" OrigName="TexHMI_printString" SrcType="6" CodeAddr="0xE32B38" HashCode="00001505">
+			<Res Name="TEXHMI_PRINTSTRING" OrigName="TexHMI_printString" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="STR" OrigName="str" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_PRINTMSG" OrigName="TexHMI_printMsg" SrcType="6" CodeAddr="0xE32B68" HashCode="00001505">
+			<Res Name="TEXHMI_PRINTMSG" OrigName="TexHMI_printMsg" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="MSG" OrigName="msg" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_GETFONT" OrigName="TexHMI_getFont" SrcType="6" CodeAddr="0xE329E4" HashCode="00001505">
+			<Res Name="TEXHMI_GETFONT" OrigName="TexHMI_getFont" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="FONT" OrigName="font" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_GETCOLOR" OrigName="TexHMI_getColor" SrcType="6" CodeAddr="0xE328E4" HashCode="00001505">
+			<Res Name="TEXHMI_GETCOLOR" OrigName="TexHMI_getColor" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="COLOR" OrigName="color" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_SETCOLOR" OrigName="TexHMI_setColor" SrcType="6" CodeAddr="0xE3293C" HashCode="00001505">
+			<Res Name="TEXHMI_SETCOLOR" OrigName="TexHMI_setColor" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="COLOR" OrigName="color" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_GETPAPER" OrigName="TexHMI_getPaper" SrcType="6" CodeAddr="0xE32964" HashCode="00001505">
+			<Res Name="TEXHMI_GETPAPER" OrigName="TexHMI_getPaper" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="PAPER" OrigName="paper" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_SETPAPER" OrigName="TexHMI_setPaper" SrcType="6" CodeAddr="0xE329BC" HashCode="00001505">
+			<Res Name="TEXHMI_SETPAPER" OrigName="TexHMI_setPaper" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="PAPER" OrigName="paper" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_GETCURSOR" OrigName="TexHMI_getCursor" SrcType="6" CodeAddr="0xE32844" HashCode="00001505">
+			<Res Name="TEXHMI_GETCURSOR" OrigName="TexHMI_getCursor" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="X" OrigName="X" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="Y" OrigName="Y" Type="DWORD" OrigType="DWORD" Addr="0x4" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_SETCURSOR" OrigName="TexHMI_setCursor" SrcType="6" CodeAddr="0xE328B0" HashCode="00001505">
+			<Res Name="TEXHMI_SETCURSOR" OrigName="TexHMI_setCursor" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="X" OrigName="X" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="Y" OrigName="Y" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_SETFONT" OrigName="TexHMI_setFont" SrcType="6" CodeAddr="0xE32A3C" HashCode="00001505">
+			<Res Name="TEXHMI_SETFONT" OrigName="TexHMI_setFont" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="FONT" OrigName="font" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+		</Fun>
+		<Fun Name="TEXHMI_CONNECTTOPMT" OrigName="TexHMI_connectToPMT" SrcType="6" CodeAddr="0xE327B0" HashCode="00001505">
+			<Res Name="TEXHMI_CONNECTTOPMT" OrigName="TexHMI_connectToPMT" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="CHANNEL" OrigName="channel" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="graphic chanel"/>
+			<VarI Name="PAGENUMBER" OrigName="pageNumber" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="PMT page number"/>
+		</Fun>
+		<Fun Name="TM_TO_DATE_AND_TIME" OrigName="TM_TO_DATE_AND_TIME" SrcType="6" CodeAddr="0xE32CA8" HashCode="00001505">
+			<Res Name="TM_TO_DATE_AND_TIME" OrigName="TM_TO_DATE_AND_TIME" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="LTM" OrigName="LTM" Type="UDINT" OrigType="UDINT" Addr="0x3" Attribs="register" Descr="time in second from 1.janauary.1970"/>
+			<VarI Name="TM" OrigName="TM" Type="DWORD" OrigType="DWORD" Addr="0x4" Attribs="register" Descr="pointer to DATE_AND_TIME object"/>
+		</Fun>
+		<Fun Name="TM_TO_TIME" OrigName="TM_TO_TIME" SrcType="6" CodeAddr="0xE32BF4" HashCode="00001505">
+			<Res Name="TM_TO_TIME" OrigName="TM_TO_TIME" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="LTM" OrigName="LTM" Type="UDINT" OrigType="UDINT" Addr="0x3" Attribs="register" Descr="time in second from 1.janauary.1970"/>
+			<VarI Name="TM" OrigName="TM" Type="DWORD" OrigType="DWORD" Addr="0x4" Attribs="register" Descr="pointer to TIME object"/>
+		</Fun>
+		<Fun Name="TM_TO_DATE" OrigName="TM_TO_DATE" SrcType="6" CodeAddr="0xE32C48" HashCode="00001505">
+			<Res Name="TM_TO_DATE" OrigName="TM_TO_DATE" Type="BOOL" OrigType="BOOL" Addr="0x3" Attribs="register"/>
+			<VarI Name="LTM" OrigName="LTM" Type="UDINT" OrigType="UDINT" Addr="0x3" Attribs="register" Descr="time in second from 1.janauary.1970"/>
+			<VarI Name="TM" OrigName="TM" Type="DWORD" OrigType="DWORD" Addr="0x4" Attribs="register" Descr="pointer to DATE_AND_TIME object"/>
+		</Fun>
+		<Fun Name="DATE_AND_TIME_TO_TM" OrigName="DATE_AND_TIME_TO_TM" SrcType="6" CodeAddr="0xE32D20" HashCode="00001505">
+			<Res Name="DATE_AND_TIME_TO_TM" OrigName="DATE_AND_TIME_TO_TM" Type="UDINT" OrigType="UDINT" Addr="0x3" Attribs="register"/>
+			<VarI Name="TM" OrigName="TM" Type="DWORD" OrigType="DWORD" Addr="0x3" Attribs="register" Descr="pointer to DATE_AND_TIME object"/>
+		</Fun>
+		<Fun Name="TEX_GETBIT" OrigName="Tex_getBit" SrcType="6" CodeAddr="0xE3064C" HashCode="00001505">
+			<Res Name="TEX_GETBIT" OrigName="Tex_getBit" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Power device Fxxxx bit"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_GETDWORD" OrigName="Tex_getDword" SrcType="6" CodeAddr="0xE3092C" HashCode="00001505">
+			<Res Name="TEX_GETDWORD" OrigName="Tex_getDword" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Tex LWxxx index"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_GETFIXED" OrigName="Tex_getFixed" SrcType="6" CodeAddr="0xE30A8C" HashCode="00001505">
+			<Res Name="TEX_GETFIXED" OrigName="Tex_getFixed" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Tex Vxxx index"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_GETINFO" OrigName="Tex_getInfo" SrcType="6" CodeAddr="0xE30C78" HashCode="00001505">
+			<Res Name="TEX_GETINFO" OrigName="Tex_getInfo" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Tex Info index"/>
+			<VarI Name="AXIS" OrigName="axis" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="name of the axis whose info is to be read" length="32"/>
+			<VarI Name="TASK" OrigName="task" Type="WORD" OrigType="WORD" Addr="0x5" Attribs="register" Descr="task which is controlling the axes"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x6" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_GETWORD" OrigName="Tex_getWord" SrcType="6" CodeAddr="0xE307EC" HashCode="00001505">
+			<Res Name="TEX_GETWORD" OrigName="Tex_getWord" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Tex Wxxx index"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_PUTBIT" OrigName="Tex_putBit" SrcType="6" CodeAddr="0xE3070C" HashCode="00001505">
+			<Res Name="TEX_PUTBIT" OrigName="Tex_putBit" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="Internal Tex Fxxxx bit"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_PUTDWORD" OrigName="Tex_putDword" SrcType="6" CodeAddr="0xE309EC" HashCode="00001505">
+			<Res Name="TEX_PUTDWORD" OrigName="Tex_putDword" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="Internal Tex LWxxxx bit"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_PUTFIXED" OrigName="Tex_putFixed" SrcType="6" CodeAddr="0xE30B7C" HashCode="00001505">
+			<Res Name="TEX_PUTFIXED" OrigName="Tex_putFixed" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="Internal Tex Vxxxx bit"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_PUTWORD" OrigName="Tex_putWord" SrcType="6" CodeAddr="0xE3088C" HashCode="00001505">
+			<Res Name="TEX_PUTWORD" OrigName="Tex_putWord" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="Internal Tex Wxxxx bit"/>
+			<VarI Name="OBJECTS" OrigName="objects" Type="WORD" OrigType="WORD" Addr="0x4" Attribs="register" Descr="how many objects (default = 1)"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="DWORD" OrigType="DWORD" Addr="0x5" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_GETSINFO" OrigName="Tex_getSinfo" SrcType="6" CodeAddr="0xE30F00" HashCode="00001505">
+			<Res Name="TEX_GETSINFO" OrigName="Tex_getSinfo" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Tex Sinfo index"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="@STRING" OrigType="@STRING" Addr="0x4" Attribs="register" Descr="pointer to IEC61131-3 variable"/>
+			<VarI Name="SIZEVARIABLE" OrigName="sizeVariable" Type="WORD" OrigType="WORD" Addr="0x5" Attribs="register" Descr="size of variable STRING"/>
+		</Fun>
+		<Fun Name="TEX_PUTINFO" OrigName="Tex_putInfo" SrcType="6" CodeAddr="0xE30DAC" HashCode="00001505">
+			<Res Name="TEX_PUTINFO" OrigName="Tex_putInfo" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Tex Info index"/>
+			<VarI Name="AXIS" OrigName="axis" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="name of the axis whose info is to be read" length="32"/>
+			<VarI Name="TASK" OrigName="task" Type="WORD" OrigType="WORD" Addr="0x5" Attribs="register" Descr="task which is controlling the axes"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="WORD" OrigType="WORD" Addr="0x6" Attribs="register" Descr="IEC61131-3 variable"/>
+		</Fun>
+		<Fun Name="TEX_PUTSINFO" OrigName="Tex_putSinfo" SrcType="6" CodeAddr="0xE30F88" HashCode="00001505">
+			<Res Name="TEX_PUTSINFO" OrigName="Tex_putSinfo" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register"/>
+			<VarI Name="INDEX" OrigName="index" Type="WORD" OrigType="WORD" Addr="0x3" Attribs="register" Descr="internal Tex Sinfo index"/>
+			<VarI Name="VARIABLE" OrigName="variable" Type="STRING" OrigType="STRING" Addr="0x4" Attribs="register" Descr="pointer to IEC61131-3 variable" length="32"/>
+			<VarI Name="SIZEVARIABLE" OrigName="sizeVariable" Type="WORD" OrigType="WORD" Addr="0x5" Attribs="register" Descr="size of variable STRING"/>
+		</Fun>
+	</Functions>
+	<Methods/>
+	<Structures>
+		<Stru Name="TEXFS_DIR_FILETIME" OrigName="TEXFS_DIR_FILETIME" Size="12">
+			<Var Name="ULCREATION" OrigName="ulCreation" Type="UDINT" OrigType="UDINT" Addr="0x0[0]" Attribs="relative" Descr="Creation date of the file"/>
+			<Var Name="ULLASTACCESS" OrigName="ulLastAccess" Type="UDINT" OrigType="UDINT" Addr="0x0[4]" Attribs="relative" Descr="Date of last access to the file"/>
+			<Var Name="ULLASTMODIFICATION" OrigName="ulLastModification" Type="UDINT" OrigType="UDINT" Addr="0x0[8]" Attribs="relative" Descr="Date of last modification to the file"/>
+		</Stru>
+		<Stru Name="TEXFS_SYS_FILETIME" OrigName="TEXFS_SYS_FILETIME" Size="12">
+			<Var Name="TCREATION" OrigName="tCreation" Type="UDINT" OrigType="UDINT" Addr="0x0[0]" Attribs="relative" Descr="creation time of the file"/>
+			<Var Name="TLASTACCESS" OrigName="tLastAccess" Type="UDINT" OrigType="UDINT" Addr="0x0[4]" Attribs="relative" Descr="time of as access to the file ( Note: Actually not available )"/>
+			<Var Name="TLASTMODIFICATION" OrigName="tLastModification" Type="UDINT" OrigType="UDINT" Addr="0x0[8]" Attribs="relative" Descr="time of last modification"/>
+		</Stru>
+		<Stru Name="TEXFS_DIR_INFO" OrigName="TEXFS_DIR_INFO" Size="20">
+			<Var Name="TDIRFILETIME" OrigName="tDirFileTime" Type="TEXFS_DIR_FILETIME" OrigType="TEXFS_DIR_FILETIME" Addr="0x0[0]" Attribs="relative" Descr="Directory dates"/>
+			<Var Name="ULSIZE" OrigName="ulSize" Type="INT" OrigType="INT" Addr="0x0[12]" Attribs="relative" Descr="Size of the directory"/>
+			<Var Name="DIDIRECTORY" OrigName="diDirectory" Type="DINT" OrigType="DINT" Addr="0x0[16]" Attribs="relative" Descr="Flag of a directory. See DirInfoFlags"/>
+		</Stru>
+	</Structures>
+	<Enums>
+		<Enum Name="ALDATABASE_MENU_PAR_FLAGS_ENUM" OrigName="ALDATABASE_MENU_PAR_FLAGS_ENUM" baseType="DINT">
+			<Var Name="PAR_ADDRESS_NONE" OrigName="PAR_ADDRESS_NONE" Value="0"/>
+			<Var Name="PAR_ADDRESS_DBTABLE_EXT_ID" OrigName="PAR_ADDRESS_DBTABLE_EXT_ID" Value="1"/>
+			<Var Name="PAR_ADDRESS_DBTABLE_SYS_ID" OrigName="PAR_ADDRESS_DBTABLE_SYS_ID" Value="2"/>
+			<Var Name="PAR_ADDRESS_DBTABLE_ADDRESS" OrigName="PAR_ADDRESS_DBTABLE_ADDRESS" Value="4"/>
+			<Var Name="PAR_ADDRESS_CUSTOM_ADDRESS" OrigName="PAR_ADDRESS_CUSTOM_ADDRESS" Value="8"/>
+		</Enum>
+		<Enum Name="SYSDBASEERRCODE" OrigName="sysDBaseErrCode" baseType="DINT">
+			<Var Name="SYSDBASEOK" OrigName="sysDBaseOk" Value="0"/>
+			<Var Name="SYSDBASEERRNOIPA" OrigName="sysDBaseErrNoIpa" Value="1"/>
+			<Var Name="SYSDBASEERRSYSERR" OrigName="sysDBaseErrSysErr" Value="2"/>
+			<Var Name="SYSDBASEERRTYPE" OrigName="sysDBaseErrType" Value="3"/>
+			<Var Name="SYSDBASEERRREADONLY" OrigName="sysDBaseErrReadOnly" Value="4"/>
+			<Var Name="SYSDBASEERRNOTWRITENOW" OrigName="sysDBaseErrNotWriteNow" Value="5"/>
+			<Var Name="SYSDBASEERRMINVALUE" OrigName="sysDBaseErrMinValue" Value="6"/>
+			<Var Name="SYSDBASEERRMAXVALUE" OrigName="sysDBaseErrMaxValue" Value="7"/>
+			<Var Name="SYSDBASEERRCNFCONFLICT" OrigName="sysDBaseErrCnfConflict" Value="8"/>
+			<Var Name="SYSDBASEERRCONSTANTLIMITS" OrigName="sysDBaseErrConstantLimits" Value="9"/>
+			<Var Name="SYSDBASEERRINPROGRESS" OrigName="sysDBaseErrInProgress" Value="10"/>
+			<Var Name="SYSDBASEERRNOTREADY" OrigName="sysDBaseErrNotReady" Value="11"/>
+			<Var Name="SYSDBASEERRNOTSPECIFIED" OrigName="sysDBaseErrNotSpecified" Value="12"/>
+			<Var Name="SYSDBASEERRWRITEONLY" OrigName="sysDBaseErrWriteOnly" Value="13"/>
+		</Enum>
+		<Enum Name="SYSDBASETYPE" OrigName="sysDBaseType" baseType="DINT">
+			<Var Name="SYSDBASETYPENULL" OrigName="sysDBaseTypeNull" Value="-1"/>
+			<Var Name="SYSDBASETYPEVOID" OrigName="sysDBaseTypeVoid" Value="0"/>
+			<Var Name="SYSDBASETYPEBOOL" OrigName="sysDBaseTypeBool" Value="1"/>
+			<Var Name="SYSDBASETYPEU8" OrigName="sysDBaseTypeU8" Value="2"/>
+			<Var Name="SYSDBASETYPES16" OrigName="sysDBaseTypeS16" Value="3"/>
+			<Var Name="SYSDBASETYPEU16" OrigName="sysDBaseTypeU16" Value="4"/>
+			<Var Name="SYSDBASETYPES32" OrigName="sysDBaseTypeS32" Value="5"/>
+			<Var Name="SYSDBASETYPEU32" OrigName="sysDBaseTypeU32" Value="6"/>
+			<Var Name="SYSDBASETYPEF32" OrigName="sysDBaseTypeF32" Value="7"/>
+			<Var Name="SYSDBASETYPESTRING" OrigName="sysDBaseTypeString" Value="8"/>
+			<Var Name="SYSDBASETYPEBUFF" OrigName="sysDBaseTypeBuff" Value="9"/>
+			<Var Name="SYSDBASETYPES8" OrigName="sysDBaseTypeS8" Value="10"/>
+			<Var Name="SYSDBASETYPES64" OrigName="sysDBaseTypeS64" Value="11"/>
+			<Var Name="SYSDBASETYPEU64" OrigName="sysDBaseTypeU64" Value="12"/>
+			<Var Name="SYSDBASETYPEF64" OrigName="sysDBaseTypeF64" Value="13"/>
+		</Enum>
+		<Enum Name="TEXFS_ACCESS_MODE" OrigName="TEXFS_ACCESS_MODE" baseType="DINT">
+			<Var Name="AM_READ" OrigName="AM_READ" Value="0"/>
+			<Var Name="AM_READ_WRITE" OrigName="AM_READ_WRITE" Value="1"/>
+			<Var Name="AM_APPEND" OrigName="AM_APPEND" Value="2"/>
+			<Var Name="AM_CREATE" OrigName="AM_CREATE" Value="3"/>
+			<Var Name="AM_TRUNCATE" OrigName="AM_TRUNCATE" Value="4"/>
+		</Enum>
+		<Enum Name="TEXFS_ERRORS" OrigName="TEXFS_ERRORS" baseType="DINT">
+			<Var Name="ERR_BAD_CONTENTS" OrigName="ERR_BAD_CONTENTS" Value="-50"/>
+			<Var Name="ERR_BAD_DISK_STRUCTURE" OrigName="ERR_BAD_DISK_STRUCTURE" Value="-29"/>
+			<Var Name="ERR_CANCELLED_BY_USER" OrigName="ERR_CANCELLED_BY_USER" Value="-28"/>
+			<Var Name="ERR_IS_A_DIR" OrigName="ERR_IS_A_DIR" Value="-27"/>
+			<Var Name="ERR_EOF" OrigName="ERR_EOF" Value="-26"/>
+			<Var Name="ERR_WRITE_PROTECTED" OrigName="ERR_WRITE_PROTECTED" Value="-25"/>
+			<Var Name="ERR_BAD_NAME" OrigName="ERR_BAD_NAME" Value="-24"/>
+			<Var Name="ERR_IS_A_FILE" OrigName="ERR_IS_A_FILE" Value="-23"/>
+			<Var Name="ERR_WRONG_SIZE" OrigName="ERR_WRONG_SIZE" Value="-22"/>
+			<Var Name="ERR_ABORTED" OrigName="ERR_ABORTED" Value="-21"/>
+			<Var Name="ERR_CANT_DO" OrigName="ERR_CANT_DO" Value="-20"/>
+			<Var Name="ERR_DIR_FULL" OrigName="ERR_DIR_FULL" Value="-19"/>
+			<Var Name="ERR_DISK_FULL" OrigName="ERR_DISK_FULL" Value="-18"/>
+			<Var Name="ERR_NO_MEMORY" OrigName="ERR_NO_MEMORY" Value="-17"/>
+			<Var Name="ERR_DISK_WRITE" OrigName="ERR_DISK_WRITE" Value="-16"/>
+			<Var Name="ERR_DISK_READ" OrigName="ERR_DISK_READ" Value="-15"/>
+			<Var Name="ERR_TOO_MANY_DIR_OPEN" OrigName="ERR_TOO_MANY_DIR_OPEN" Value="-14"/>
+			<Var Name="ERR_VOLUME_NOT_AVAILABLE" OrigName="ERR_VOLUME_NOT_AVAILABLE" Value="-13"/>
+			<Var Name="ERR_BAD_OWNER" OrigName="ERR_BAD_OWNER" Value="-12"/>
+			<Var Name="ERR_BAD_INDEX" OrigName="ERR_BAD_INDEX" Value="-11"/>
+			<Var Name="ERR_NO_ENTRIES" OrigName="ERR_NO_ENTRIES" Value="-10"/>
+			<Var Name="ERR_TOO_MANY_OPEN_FILE" OrigName="ERR_TOO_MANY_OPEN_FILE" Value="-9"/>
+			<Var Name="ERR_BAD_PARAMETER" OrigName="ERR_BAD_PARAMETER" Value="-8"/>
+			<Var Name="ERR_INVALID_ACCESS" OrigName="ERR_INVALID_ACCESS" Value="-7"/>
+			<Var Name="ERR_PERMISSION_DENIED" OrigName="ERR_PERMISSION_DENIED" Value="-6"/>
+			<Var Name="ERR_FILE_NOT_FOUND" OrigName="ERR_FILE_NOT_FOUND" Value="-1"/>
+		</Enum>
+		<Enum Name="TEXFS_SYS_FILE_STATUS" OrigName="TEXFS_SYS_FILE_STATUS" baseType="DINT">
+			<Var Name="FS_NOT_OPEN" OrigName="FS_NOT_OPEN" Value="0"/>
+			<Var Name="FS_OPEN_READ" OrigName="FS_OPEN_READ" Value="1"/>
+			<Var Name="FS_OPEN_EOF" OrigName="FS_OPEN_EOF" Value="2"/>
+			<Var Name="FS_OPEN_READ_WRITE" OrigName="FS_OPEN_READ_WRITE" Value="3"/>
+			<Var Name="FS_OPEN_WRITE" OrigName="FS_OPEN_WRITE" Value="4"/>
+			<Var Name="FS_OPEN_WRITE_ERR" OrigName="FS_OPEN_WRITE_ERR" Value="5"/>
+		</Enum>
+		<Enum Name="TEX_SET_POSITION_MODE" OrigName="TEX_SET_POSITION_MODE" baseType="DINT">
+			<Var Name="SET_ABSOLUTE" OrigName="SET_ABSOLUTE" Value="0"/>
+			<Var Name="SET_RELATIVE" OrigName="SET_RELATIVE" Value="1"/>
+		</Enum>
+		<Enum Name="TEX_OWNER" OrigName="TEX_OWNER" baseType="DINT">
+			<Var Name="NO_OWNER" OrigName="NO_OWNER" Value="0"/>
+			<Var Name="PLC" OrigName="PLC" Value="1"/>
+			<Var Name="CNC" OrigName="CNC" Value="2"/>
+			<Var Name="JOG" OrigName="JOG" Value="3"/>
+			<Var Name="IEC61131" OrigName="IEC61131" Value="4"/>
+		</Enum>
+		<Enum Name="TEX_MOTION_TYPE" OrigName="TEX_MOTION_TYPE" baseType="DINT">
+			<Var Name="RELEASED" OrigName="RELEASED" Value="0"/>
+			<Var Name="ABRUPTLY" OrigName="ABRUPTLY" Value="1"/>
+			<Var Name="COUPLE" OrigName="COUPLE" Value="2"/>
+			<Var Name="COUPLE_POSITION" OrigName="COUPLE_POSITION" Value="3"/>
+			<Var Name="POSITION" OrigName="POSITION" Value="4"/>
+			<Var Name="VELOCITY" OrigName="VELOCITY" Value="5"/>
+			<Var Name="POSIT_S" OrigName="POSIT_S" Value="6"/>
+			<Var Name="VEL_S" OrigName="VEL_S" Value="7"/>
+			<Var Name="DEPENDENT" OrigName="DEPENDENT" Value="8"/>
+			<Var Name="DEPEND_1" OrigName="DEPEND_1" Value="9"/>
+			<Var Name="DEPEND_2" OrigName="DEPEND_2" Value="10"/>
+			<Var Name="DEPEND_3" OrigName="DEPEND_3" Value="11"/>
+			<Var Name="DEPEND_4" OrigName="DEPEND_4" Value="12"/>
+			<Var Name="DEPEND_5" OrigName="DEPEND_5" Value="13"/>
+			<Var Name="DEPEND_6" OrigName="DEPEND_6" Value="14"/>
+			<Var Name="DEPEND_7" OrigName="DEPEND_7" Value="15"/>
+			<Var Name="INTERPOLATED" OrigName="INTERPOLATED" Value="16"/>
+		</Enum>
+		<Enum Name="TEXVAR_ERRORS" OrigName="TEXVAR_ERRORS" baseType="DINT">
+			<Var Name="NO_ERROR" OrigName="NO_ERROR" Value="0"/>
+			<Var Name="ERR_VAR_INDEX" OrigName="ERR_VAR_INDEX" Value="1"/>
+			<Var Name="ERR_AXIS" OrigName="ERR_AXIS" Value="2"/>
+			<Var Name="ERR_TASK" OrigName="ERR_TASK" Value="3"/>
+			<Var Name="ERR_WRONG_VALUE" OrigName="ERR_WRONG_VALUE" Value="4"/>
+			<Var Name="ERR_VAR_ADDRESS" OrigName="ERR_VAR_ADDRESS" Value="5"/>
+			<Var Name="ERR_VAR_SIZE_ERROR" OrigName="ERR_VAR_SIZE_ERROR" Value="6"/>
+		</Enum>
+	</Enums>
+	<Interfaces/>
+	<Labels/>
+	<DataBlocks>
+		<DBlock Imgc="0" Type="M" DbId="0" Addr="0x2007F956" NEl="1024" DataSize="1" RW="RW"/>
+		<DBlock Imgc="0" Type="I" DbId="0" Addr="0x2007FD56" NEl="1792" DataSize="1" RW="R"/>
+		<DBlock Imgc="0" Type="O" DbId="0" Addr="0x20080456" NEl="1792" DataSize="1" RW="RW"/>
+		<DBlock Imgc="0" Type="I" DbId="1" Addr="0x200262B4" NEl="3" DataSize="2" RW="R"/>
+		<DBlock Imgc="0" Type="O" DbId="1" Addr="0x200262BA" NEl="2" DataSize="2" RW="RW"/>
+		<DBlock Imgc="0" Type="M" DbId="200" Addr="0x20080B56" NEl="512" DataSize="2" RW="RW"/>
+		<DBlock Imgc="0" Type="M" DbId="201" Addr="0x20080F56" NEl="512" DataSize="2" RW="RW"/>
+		<DBlock Imgc="0" Type="M" DbId="60000" Addr="0x20026298" NEl="1" DataSize="4" RW="R"/>
+	</DataBlocks>
+	<VirtualTables/>
+	<UnspecAddrs/>
+</LLSymbolTable>
